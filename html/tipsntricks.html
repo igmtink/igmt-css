@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/stylesheet.svg" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <title>Ivan Gregor Tabalno - CSS</title>
+  </head>
+  <body class="mde-preview">
+    <main>
+      <div class="home-container">
+        <div class="home">
+          <a href="../index.html">Index </a>
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            class="opacity-50"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="48"
+              d="M184 112l144 144-144 144"
+            ></path>
+          </svg>
+          <span class="breadcrumbs">Tips & Tricks</span>
+        </div>
+      </div>
+      <div class="article">
+        <p data-line="3" data-line-end="3"><code>Centering element</code></p>
+        <pre
+          data-line="5"
+          data-line-end="32"
+        ><code class="inline cm-s-default"><span class="cm-comment">/* Margin Method */</span><span class="">
+</span><span class="cm-tag">margin-inline</span><span class="">: </span><span class="cm-variable-3">auto</span><span class="">;</span><span class="">
+</span><span class="cm-comment">/* or */</span><span class="">
+</span><span class="cm-tag">margin</span><span class="">: </span><span class="cm-number">0</span><span class=""> </span><span class="cm-tag">auto</span><span class="">;</span><span class="">
+
+</span><span class="cm-comment">/* Flexbox Method */</span><span class="">
+</span><span class="cm-comment">/* Parent Element */</span><span class="">
+</span><span class="cm-tag">display</span><span class="">: </span><span class="cm-variable-3">flex</span><span class="">;</span><span class="">
+</span><span class="cm-tag">justify-contents</span><span class="">: </span><span class="cm-variable-3">center</span><span class="">;</span><span class="">
+</span><span class="cm-tag">align-items</span><span class="">: </span><span class="cm-variable-3">center</span><span class="">;</span><span class="">
+</span><span class="cm-comment">/* Now the Child Element will be centered */</span><span class="">
+
+</span><span class="cm-comment">/* CSS Grid Method #1 */</span><span class="">
+</span><span class="cm-comment">/* Parent Element */</span><span class="">
+</span><span class="cm-tag">display</span><span class="">: </span><span class="cm-variable-3">grid</span><span class="">;</span><span class="">
+</span><span class="cm-tag">justify-items</span><span class="">: </span><span class="cm-variable-3">center</span><span class="">;</span><span class="">
+</span><span class="cm-tag">align-items</span><span class="">: </span><span class="cm-variable-3">center</span><span class="">;</span><span class="">
+</span><span class="cm-comment">/* or */</span><span class="">
+</span><span class="cm-tag">place-items</span><span class="">: </span><span class="cm-variable-3">center</span><span class="">;</span><span class="">
+</span><span class="cm-comment">/* Now the Child Element will be centered */</span><span class="">
+
+</span><span class="cm-comment">/* Absolute Method */</span><span class="">
+</span><span class="cm-tag">position</span><span class="">: </span><span class="cm-variable-3">absolute</span><span class="">;</span><span class="">
+</span><span class="cm-tag">top</span><span class="">: </span><span class="cm-number">50%</span><span class="">;</span><span class="">
+</span><span class="cm-tag">right</span><span class="">: </span><span class="cm-number">50%</span><span class="">;</span><span class="">
+</span><span class="cm-tag">transform</span><span class="">: </span><span class="cm-variable callee">translate</span><span class="">(</span><span class="cm-number">-50%</span><span class="">, </span><span class="cm-number">-50%</span><span class="">);</span><span class="">
+</span></code></pre>
+        <p data-line="34" data-line-end="34">
+          <img src="../images/Centering-Element.png" alt="Centering Element" />
+        </p>
+        <hr data-line="36" data-line-end="36" />
+        <p data-line="38" data-line-end="38"><code>max-width: 100%;</code></p>
+        <pre
+          data-line="40"
+          data-line-end="45"
+        ><code class="inline cm-s-default"><span class="cm-tag">width</span><span class="">: </span><span class="cm-number">480px</span><span class="">; </span><span class="cm-comment">/* Specific size of width */</span><span class="">
+</span><span class="cm-tag">max-width</span><span class="">: </span><span class="cm-number">100%</span><span class="">; </span><span class="cm-comment">/* Preventing for overflow */</span><span class="">
+</span><span class="cm-comment">/* or use simplified method */</span><span class="">
+</span><span class="cm-tag">width</span><span class="">: </span><span class="cm-variable callee">min</span><span class="">(</span><span class="cm-number">480px</span><span class="">, </span><span class="cm-number">100%</span><span class="">);</span><span class="">
+</span></code></pre>
+        <p data-line="47" data-line-end="47">
+          To prevent the element to overflow.
+        </p>
+        <p data-line="49" data-line-end="49">
+          <code>max-width</code> is setting the maximum width.
+        </p>
+        <div class="video-container">
+          <video autoplay muted loop playsinline>
+            <source
+              src="../images/without-max-width.mp4"
+              type="video/mp4; codecs=hvc1"
+            />
+            <source
+              src="../images/without-max-width.webm"
+              type="video/webm; codecs=vp9"
+            />
+          </video>
+          <video autoplay muted loop playsinline>
+            <source
+              src="../images/with-max-width.mp4"
+              type="video/mp4; codecs=hvc1"
+            />
+            <source
+              src="../images/with-max-width.webm"
+              type="video/webm; codecs=vp9"
+            />
+          </video>
+        </div>
+        <hr data-line="45" data-line-end="45" />
+        <p data-line="53" data-line-end="53">
+          <code>min-content</code> <code>max-content</code>
+          <code>fit-content</code>
+        </p>
+        <pre
+          data-line="55"
+          data-line-end="60"
+        ><code class="inline cm-s-default"><span class="cm-qualifier">.class-name</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* MIN-CONTENT */</span><span class="">
+</span><span class="">  </span><span class="cm-property">width</span><span class="">: </span><span class="cm-variable">min-content</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <p data-line="62" data-line-end="62">
+          <code>min-content</code> will shrink to the smallest it can possible
+          get, it's like <code>parent-div</code> make it as small as you can
+          make it without causing any line breaks.
+        </p>
+        <div class="video-container" style="margin-bottom: 1rem">
+          <video autoplay muted loop playsinline>
+            <source
+              src="../images/min-content.mp4"
+              type="video/mp4; codecs=hvc1"
+            />
+            <source
+              src="../images/min-content.webm"
+              type="video/webm; codecs=vp9"
+            />
+          </video>
+        </div>
+        <pre
+          data-line="66"
+          data-line-end="71"
+        ><code class="inline cm-s-default"><span class="cm-qualifier">.class-name</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* MAX-CONTENT */</span><span class="">
+</span><span class="">  </span><span class="cm-property">width</span><span class="">: </span><span class="cm-variable">max-content</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <p data-line="73" data-line-end="73">
+          <code>max-content</code> opposite of <code>min-content</code> means
+          there's no line breaks, so it will never shrink smaller than that.
+        </p>
+        <div class="video-container" style="margin-bottom: 1rem">
+          <video autoplay muted loop playsinline>
+            <source
+              src="../images/max-content.mp4"
+              type="video/mp4; codecs=hvc1"
+            />
+            <source
+              src="../images/max-content.webm"
+              type="video/webm; codecs=vp9"
+            />
+          </video>
+        </div>
+        <pre
+          data-line="77"
+          data-line-end="82"
+        ><code class="inline cm-s-default"><span class="cm-qualifier">.class-name</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* FIT-CONTENT */</span><span class="">
+</span><span class="">  </span><span class="cm-property">width</span><span class="">: </span><span class="cm-variable">fit-content</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <p data-line="84" data-line-end="84">
+          <code>fit-content</code> is sort of in between the
+          <code>min-content</code> and <code>max-content</code> where it will
+          hit that max content size, then if there's not enough room it allows
+          for line wraps.
+        </p>
+        <div class="video-container">
+          <video autoplay muted loop playsinline>
+            <source
+              src="../images/fit-content.mp4"
+              type="video/mp4; codecs=hvc1"
+            />
+            <source
+              src="../images/fit-content.webm"
+              type="video/webm; codecs=vp9"
+            />
+          </video>
+        </div>
+        <hr data-line="57" data-line-end="57" />
+        <h3 data-line="59" data-line-end="59">
+          More Tips &amp; Tricks Soon...
+        </h3>
+      </div>
+      <footer class="reserved">
+        <span>© 2022 Ivan Gregor Tabalno. All Rights Reserved.</span>
+      </footer>
+    </main>
+  </body>
+</html>

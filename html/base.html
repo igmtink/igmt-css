@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/stylesheet.svg" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <title>Ivan Gregor Tabalno - CSS</title>
+  </head>
+  <body class="mde-preview">
+    <main>
+      <div class="home-container">
+        <div class="home">
+          <a href="../index.html">Index </a>
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            class="opacity-50"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="48"
+              d="M184 112l144 144-144 144"
+            ></path>
+          </svg>
+          <span class="breadcrumbs">Base</span>
+        </div>
+      </div>
+      <div class="article">
+        <p data-line="3" data-line-end="3"><code>HTML Setup</code></p>
+        <pre
+          data-line="5"
+          data-line-end="38"
+        ><code class="inline cm-s-default"><span class="cm-meta">&lt;!DOCTYPE html&gt;</span><span class="">
+</span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">html</span><span class=""> </span><span class="cm-attribute">lang</span><span class="">=</span><span class="cm-string">"en"</span><span class="cm-tag bracket">&gt;</span><span class="">
+</span><span class="">  </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tag bracket">&gt;</span><span class="">
+</span><span class="">    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">meta</span><span class=""> </span><span class="cm-attribute">charset</span><span class="">=</span><span class="cm-string">"UTF-8"</span><span class=""> </span><span class="cm-tag bracket">/&gt;</span><span class="">
+</span><span class="">    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">meta</span><span class=""> </span><span class="cm-attribute">http-equiv</span><span class="">=</span><span class="cm-string">"X-UA-Compatible"</span><span class=""> </span><span class="cm-attribute">content</span><span class="">=</span><span class="cm-string">"IE=edge"</span><span class=""> </span><span class="cm-tag bracket">/&gt;</span><span class="">
+</span><span class="">    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">meta</span><span class=""> </span><span class="cm-attribute">name</span><span class="">=</span><span class="cm-string">"viewport"</span><span class=""> </span><span class="cm-attribute">content</span><span class="">=</span><span class="cm-string">"width=device-width, initial-scale=1.0"</span><span class=""> </span><span class="cm-tag bracket">/&gt;</span><span class="">
+
+</span><span class="">    </span><span class="cm-comment">&lt;!-- DESCRIPTION --&gt;</span><span class="">
+</span><span class="">    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">meta</span><span class="">
+</span><span class="">      </span><span class="cm-attribute">name</span><span class="">=</span><span class="cm-string">"description"</span><span class="">
+</span><span class="">      </span><span class="cm-attribute">content</span><span class="">=</span><span class="cm-string">"test..."</span><span class="">
+</span><span class="">    </span><span class="cm-tag bracket">/&gt;</span><span class="">
+
+</span><span class="">    </span><span class="cm-comment">&lt;!-- FAVICON --&gt;</span><span class="">
+</span><span class="">    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">link</span><span class=""> </span><span class="cm-attribute">rel</span><span class="">=</span><span class="cm-string">"icon"</span><span class=""> </span><span class="cm-attribute">href</span><span class="">=</span><span class="cm-string">"#"</span><span class=""> </span><span class="cm-tag bracket">/&gt;</span><span class="">
+</span><span class="">    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">link</span><span class=""> </span><span class="cm-attribute">rel</span><span class="">=</span><span class="cm-string">"apple-touch-icon"</span><span class=""> </span><span class="cm-attribute">href</span><span class="">=</span><span class="cm-string">"#"</span><span class=""> </span><span class="cm-tag bracket">/&gt;</span><span class="">
+</span><span class="">    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">link</span><span class=""> </span><span class="cm-attribute">rel</span><span class="">=</span><span class="cm-string">"manifest"</span><span class=""> </span><span class="cm-attribute">href</span><span class="">=</span><span class="cm-string">"manifest.webmanifest"</span><span class=""> </span><span class="cm-tag bracket">/&gt;</span><span class="">
+
+</span><span class="">    </span><span class="cm-comment">&lt;!-- ICON --&gt;</span><span class="">
+</span><span class="">    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">link</span><span class="">
+</span><span class="">      </span><span class="cm-attribute">href</span><span class="">=</span><span class="cm-string">"https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"</span><span class="">
+</span><span class="">      </span><span class="cm-attribute">rel</span><span class="">=</span><span class="cm-string">"stylesheet"</span><span class="">
+</span><span class="">    </span><span class="cm-tag bracket">/&gt;</span><span class="">
+
+</span><span class="">    </span><span class="cm-comment">&lt;!-- Stylesheet CSS --&gt;</span><span class="">
+</span><span class="">    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">link</span><span class=""> </span><span class="cm-attribute">rel</span><span class="">=</span><span class="cm-string">"stylesheet"</span><span class=""> </span><span class="cm-attribute">href</span><span class="">=</span><span class="cm-string">"css/test.css"</span><span class=""> </span><span class="cm-tag bracket">/&gt;</span><span class="">
+
+</span><span class="">    </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tag bracket">&gt;</span><span class="">Test</span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tag bracket">&gt;</span><span class="">
+</span><span class="">  </span><span class="cm-tag bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tag bracket">&gt;</span><span class="">
+
+</span><span class="">  </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tag bracket">&gt;</span><span class="">
+</span><span class="">  </span><span class="cm-tag bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tag bracket">&gt;</span><span class="">
+</span></code></pre>
+        <hr data-line="40" data-line-end="40" />
+        <p data-line="42" data-line-end="42"><code>CSS Reset</code></p>
+        <ol data-line="44" data-line-end="45">
+          <li data-line="44" data-line-end="44">
+            Prevent padding and border from affecting element width.
+          </li>
+          <li data-line="45" data-line-end="45">
+            Allow adding a border to an element by just adding a border-width.
+          </li>
+        </ol>
+        <pre
+          data-line="47"
+          data-line-end="58"
+        ><code class="inline cm-s-default"><span class="">*,</span><span class="">
+</span><span class="">::</span><span class="cm-variable-3">before</span><span class="">,</span><span class="">
+</span><span class="">::</span><span class="cm-variable-3">after</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 1 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">box-sizing</span><span class="">: </span><span class="cm-atom">border-box</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 2 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">border-width</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">border-style</span><span class="">: </span><span class="cm-atom">solid</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">border-color</span><span class="">: </span><span class="cm-atom">#e5e7eb</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="60" data-line-end="60" />
+        <ol data-line="62" data-line-end="65">
+          <li data-line="62" data-line-end="62">
+            Use a consistent sensible line-height in all browsers.
+          </li>
+          <li data-line="63" data-line-end="63">
+            Prevent adjustments of font size after orientation changes in iOS.
+          </li>
+          <li data-line="64" data-line-end="64">
+            Use a more readable tab size.
+          </li>
+          <li data-line="65" data-line-end="65">
+            Use the user's configured <code>sans</code> font-family by default.
+          </li>
+        </ol>
+        <pre
+          data-line="67"
+          data-line-end="80"
+        ><code class="inline cm-s-default"><span class="cm-tag">html</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 1 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">line-height</span><span class="">: </span><span class="cm-number">1.5</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 2 */</span><span class="">
+</span><span class="">  </span><span class="cm-meta">-webkit-</span><span class="cm-property">text-size-adjust</span><span class="">: </span><span class="cm-number">100%</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 3 */</span><span class="">
+</span><span class="">  </span><span class="cm-meta">-moz-</span><span class="cm-property">tab-size</span><span class="">: </span><span class="cm-number">4</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-meta">-o-</span><span class="cm-property">tab-size</span><span class="">: </span><span class="cm-number">4</span><span class="">;</span><span class="">
+</span><span class="">     </span><span class="cm-property">tab-size</span><span class="">: </span><span class="cm-number">4</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 4 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-family</span><span class="">: </span><span class="cm-variable">ui-sans-serif</span><span class="">, </span><span class="cm-atom">system-ui</span><span class="">, </span><span class="cm-meta">-apple-</span><span class="cm-variable">system</span><span class="">, </span><span class="cm-variable">BlinkMacSystemFont</span><span class="">, </span><span class="cm-string">"Segoe UI"</span><span class="">, </span><span class="cm-variable">Roboto</span><span class="">, </span><span class="cm-string">"Helvetica Neue"</span><span class="">, </span><span class="cm-variable">Arial</span><span class="">, </span><span class="cm-string">"Noto Sans"</span><span class="">, </span><span class="cm-atom">sans-serif</span><span class="">, </span><span class="cm-string">"Apple Color Emoji"</span><span class="">, </span><span class="cm-string">"Segoe UI Emoji"</span><span class="">, </span><span class="cm-string">"Segoe UI Symbol"</span><span class="">, </span><span class="cm-string">"Noto Color Emoji"</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="82" data-line-end="82" />
+        <ol data-line="84" data-line-end="85">
+          <li data-line="84" data-line-end="84">
+            Remove the margin in all browsers.
+          </li>
+          <li data-line="85" data-line-end="85">
+            Inherit line-height from <code>html</code> so users can set them as
+            a class directly on the <code>html</code> element.
+          </li>
+        </ol>
+        <pre
+          data-line="87"
+          data-line-end="94"
+        ><code class="inline cm-s-default"><span class="cm-tag">body</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 1 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">margin</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 2 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">line-height</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="96" data-line-end="96" />
+        <ol data-line="98" data-line-end="100">
+          <li data-line="98" data-line-end="98">
+            Add the correct height in Firefox.
+          </li>
+          <li data-line="99" data-line-end="99">
+            Correct the inheritance of border color in Firefox.
+          </li>
+          <li data-line="100" data-line-end="100">
+            Ensure horizontal rules are visible by default.
+          </li>
+        </ol>
+        <pre
+          data-line="102"
+          data-line-end="111"
+        ><code class="inline cm-s-default"><span class="cm-tag">hr</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 1 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">height</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 2 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">color</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 3 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">border-top-width</span><span class="">: </span><span class="cm-number">1px</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="113" data-line-end="113" />
+        <p data-line="115" data-line-end="115">
+          Add the correct text decoration in Chrome, Edge, and Safari.
+        </p>
+        <pre
+          data-line="117"
+          data-line-end="122"
+        ><code class="inline cm-s-default"><span class="cm-tag">abbr</span><span class="">:</span><span class="cm-variable callee">where</span><span class="">([</span><span class="cm-tag">title</span><span class="">]) {</span><span class="">
+</span><span class="">  </span><span class="cm-meta">-webkit-</span><span class="cm-property">text-decoration</span><span class="">: </span><span class="cm-atom">underline</span><span class=""> </span><span class="cm-atom">dotted</span><span class="">;</span><span class="">
+</span><span class="">          </span><span class="cm-property">text-decoration</span><span class="">: </span><span class="cm-atom">underline</span><span class=""> </span><span class="cm-atom">dotted</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="124" data-line-end="124" />
+        <p data-line="126" data-line-end="126">
+          Remove the default font size and weight for headings.
+        </p>
+        <pre
+          data-line="128"
+          data-line-end="138"
+        ><code class="inline cm-s-default"><span class="cm-tag">h1</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h2</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h3</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h4</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h5</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h6</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-size</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-weight</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="140" data-line-end="140" />
+        <p data-line="142" data-line-end="142">
+          Removes the default spacing and border for appropriate elements.
+        </p>
+        <pre
+          data-line="144"
+          data-line-end="177"
+        ><code class="inline cm-s-default"><span class="cm-tag">blockquote</span><span class="">,</span><span class="">
+</span><span class="cm-tag">dl</span><span class="">,</span><span class="">
+</span><span class="cm-tag">dd</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h1</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h2</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h3</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h4</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h5</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h6</span><span class="">,</span><span class="">
+</span><span class="cm-tag">hr</span><span class="">,</span><span class="">
+</span><span class="cm-tag">figure</span><span class="">,</span><span class="">
+</span><span class="cm-tag">p</span><span class="">,</span><span class="">
+</span><span class="cm-tag">pre</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">margin</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">fieldset</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">margin</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">padding</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">legend</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">padding</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">ol</span><span class="">,</span><span class="">
+</span><span class="cm-tag">ul</span><span class="">,</span><span class="">
+</span><span class="cm-tag">menu</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">list-style</span><span class="">: </span><span class="cm-atom">none</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">margin</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">padding</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="179" data-line-end="179" />
+        <p data-line="181" data-line-end="181">
+          Reset links to optimize for opt-in styling instead of opt-out.
+        </p>
+        <pre
+          data-line="183"
+          data-line-end="188"
+        ><code class="inline cm-s-default"><span class="cm-tag">a</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">color</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">text-decoration</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="190" data-line-end="190" />
+        <ol data-line="192" data-line-end="195">
+          <li data-line="192" data-line-end="192">
+            Make replaced elements <code>display: block</code> by default.
+          </li>
+          <li data-line="193" data-line-end="195">
+            Add <code>vertical-align: middle</code> to align replaced elements
+            more sensibly by default. This can trigger a poorly considered lint
+            error in some tools but is included by design.
+          </li>
+        </ol>
+        <pre
+          data-line="196"
+          data-line-end="210"
+        ><code class="inline cm-s-default"><span class="cm-tag">img</span><span class="">,</span><span class="">
+</span><span class="cm-tag">svg</span><span class="">,</span><span class="">
+</span><span class="cm-tag">video</span><span class="">,</span><span class="">
+</span><span class="cm-tag">canvas</span><span class="">,</span><span class="">
+</span><span class="cm-tag">audio</span><span class="">,</span><span class="">
+</span><span class="cm-tag">iframe</span><span class="">,</span><span class="">
+</span><span class="cm-tag">embed</span><span class="">,</span><span class="">
+</span><span class="cm-tag">object</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 1 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">display</span><span class="">: </span><span class="cm-atom">block</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 2 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">vertical-align</span><span class="">: </span><span class="cm-atom">middle</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="212" data-line-end="212" />
+        <p data-line="214" data-line-end="214">
+          Constrain images and videos to the parent width and preserve their
+          intrinsic aspect ratio.
+        </p>
+        <pre
+          data-line="216"
+          data-line-end="222"
+        ><code class="inline cm-s-default"><span class="cm-tag">img</span><span class="">,</span><span class="">
+</span><span class="cm-tag">video</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">max-width</span><span class="">: </span><span class="cm-number">100%</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">height</span><span class="">: </span><span class="cm-atom">auto</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="224" data-line-end="224" />
+        <p data-line="226" data-line-end="226">
+          Add the correct font weight in Edge and Safari.
+        </p>
+        <pre
+          data-line="228"
+          data-line-end="233"
+        ><code class="inline cm-s-default"><span class="cm-tag">b</span><span class="">,</span><span class="">
+</span><span class="cm-tag">strong</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-weight</span><span class="">: </span><span class="cm-atom">bolder</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="235" data-line-end="235" />
+        <ol data-line="237" data-line-end="238">
+          <li data-line="237" data-line-end="237">
+            Use the user's configured <code>mono</code> font family by default.
+          </li>
+          <li data-line="238" data-line-end="238">
+            Correct the odd <code>em</code> font sizing in all browsers.
+          </li>
+        </ol>
+        <pre
+          data-line="240"
+          data-line-end="250"
+        ><code class="inline cm-s-default"><span class="cm-tag">code</span><span class="">,</span><span class="">
+</span><span class="cm-tag">kbd</span><span class="">,</span><span class="">
+</span><span class="cm-tag">samp</span><span class="">,</span><span class="">
+</span><span class="cm-tag">pre</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 1 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-family</span><span class="">: </span><span class="cm-variable">ui-monospace</span><span class="">, </span><span class="cm-variable">SFMono-Regular</span><span class="">, </span><span class="cm-variable">Menlo</span><span class="">, </span><span class="cm-variable">Monaco</span><span class="">, </span><span class="cm-variable">Consolas</span><span class="">, </span><span class="cm-string">"Liberation Mono"</span><span class="">, </span><span class="cm-string">"Courier New"</span><span class="">, </span><span class="cm-atom">monospace</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 2 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-size</span><span class="">: </span><span class="cm-number">1rem</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="252" data-line-end="252" />
+        <p data-line="254" data-line-end="254">
+          Add the correct font size in all browsers.
+        </p>
+        <pre
+          data-line="256"
+          data-line-end="260"
+        ><code class="inline cm-s-default"><span class="cm-tag">small</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-size</span><span class="">: </span><span class="cm-number">80%</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="262" data-line-end="262" />
+        <p data-line="264" data-line-end="264">
+          Prevent <code>sub</code> and <code>sup</code> elements from affecting
+          the line height in all browsers.
+        </p>
+        <pre
+          data-line="266"
+          data-line-end="282"
+        ><code class="inline cm-s-default"><span class="cm-tag">sub</span><span class="">,</span><span class="">
+</span><span class="cm-tag">sup</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-size</span><span class="">: </span><span class="cm-number">75%</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">line-height</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">position</span><span class="">: </span><span class="cm-atom">relative</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">vertical-align</span><span class="">: </span><span class="cm-atom">baseline</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">sub</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">bottom</span><span class="">: </span><span class="cm-number">-0.25rem</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">sup</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">top</span><span class="">: </span><span class="cm-number">-0.5rem</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="284" data-line-end="284" />
+        <ol data-line="286" data-line-end="288">
+          <li data-line="286" data-line-end="286">
+            Remove text indentation from table contents in Chrome and Safari.
+          </li>
+          <li data-line="287" data-line-end="287">
+            Correct table border color inheritance in all Chrome and Safari.
+          </li>
+          <li data-line="288" data-line-end="288">
+            Remove gaps between table borders by default.
+          </li>
+        </ol>
+        <pre
+          data-line="290"
+          data-line-end="299"
+        ><code class="inline cm-s-default"><span class="cm-tag">table</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 1 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">text-indent</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 2 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">border-color</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 3 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">border-collapse</span><span class="">: </span><span class="cm-atom">collapse</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="301" data-line-end="301" />
+        <ol data-line="303" data-line-end="305">
+          <li data-line="303" data-line-end="303">
+            Change the font styles in all browsers.
+          </li>
+          <li data-line="304" data-line-end="304">
+            Remove the margin in Firefox and Safari.
+          </li>
+          <li data-line="305" data-line-end="305">
+            Remove default padding in all browsers.
+          </li>
+        </ol>
+        <pre
+          data-line="307"
+          data-line-end="324"
+        ><code class="inline cm-s-default"><span class="cm-tag">button</span><span class="">,</span><span class="">
+</span><span class="cm-tag">input</span><span class="">,</span><span class="">
+</span><span class="cm-tag">optgroup</span><span class="">,</span><span class="">
+</span><span class="cm-tag">select</span><span class="">,</span><span class="">
+</span><span class="cm-tag">textarea</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 1 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-family</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-size</span><span class="">: </span><span class="cm-number">100%</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-weight</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">line-height</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">color</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 2 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">margin</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 3 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">padding</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="326" data-line-end="326" />
+        <p data-line="328" data-line-end="328">
+          Remove the inheritance of text transform in Edge and Firefox.
+        </p>
+        <pre
+          data-line="330"
+          data-line-end="335"
+        ><code class="inline cm-s-default"><span class="cm-tag">button</span><span class="">,</span><span class="">
+</span><span class="cm-tag">select</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">text-transform</span><span class="">: </span><span class="cm-atom">none</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="337" data-line-end="337" />
+        <ol data-line="339" data-line-end="340">
+          <li data-line="339" data-line-end="339">
+            Correct the inability to style clickable types in iOS and Safari.
+          </li>
+          <li data-line="340" data-line-end="340">
+            Remove default button styles.
+          </li>
+        </ol>
+        <pre
+          data-line="342"
+          data-line-end="353"
+        ><code class="inline cm-s-default"><span class="cm-tag">button</span><span class="">,</span><span class="">
+</span><span class="">[</span><span class="cm-tag">type</span><span class="">=</span><span class="cm-string">'button'</span><span class="">],</span><span class="">
+</span><span class="">[</span><span class="cm-tag">type</span><span class="">=</span><span class="cm-string">'reset'</span><span class="">],</span><span class="">
+</span><span class="">[</span><span class="cm-tag">type</span><span class="">=</span><span class="cm-string">'submit'</span><span class="">] {</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 1 */</span><span class="">
+</span><span class="">  </span><span class="cm-meta">-webkit-</span><span class="cm-property">appearance</span><span class="">: </span><span class="cm-atom">button</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 2 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">background-color</span><span class="">: </span><span class="cm-atom">transparent</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">background-image</span><span class="">: </span><span class="cm-atom">none</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="355" data-line-end="355" />
+        <p data-line="357" data-line-end="357">
+          Use the modern Firefox focus style for all focusable elements.
+        </p>
+        <pre
+          data-line="359"
+          data-line-end="363"
+        ><code class="inline cm-s-default"><span class="">:</span><span class="cm-meta">-moz-</span><span class="cm-variable-3">focusring</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">outline</span><span class="">: </span><span class="cm-atom">auto</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="365" data-line-end="365" />
+        <p data-line="367" data-line-end="367">
+          Remove the additional <code>:invalid</code> styles in Firefox.
+        </p>
+        <pre
+          data-line="369"
+          data-line-end="373"
+        ><code class="inline cm-s-default"><span class="">:</span><span class="cm-meta">-moz-</span><span class="cm-variable-3">ui-invalid</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">box-shadow</span><span class="">: </span><span class="cm-atom">none</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="375" data-line-end="375" />
+        <p data-line="377" data-line-end="377">
+          Add the correct vertical alignment in Chrome and Firefox.
+        </p>
+        <pre
+          data-line="379"
+          data-line-end="383"
+        ><code class="inline cm-s-default"><span class="cm-tag">progress</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">vertical-align</span><span class="">: </span><span class="cm-atom">baseline</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="385" data-line-end="385" />
+        <p data-line="387" data-line-end="387">
+          Correct the cursor style of increment and decrement buttons in Safari.
+        </p>
+        <pre
+          data-line="389"
+          data-line-end="394"
+        ><code class="inline cm-s-default"><span class="">::</span><span class="cm-meta">-webkit-</span><span class="cm-variable-3">inner-spin-button</span><span class="">,</span><span class="">
+</span><span class="">::</span><span class="cm-meta">-webkit-</span><span class="cm-variable-3">outer-spin-button</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">height</span><span class="">: </span><span class="cm-atom">auto</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="396" data-line-end="396" />
+        <ol data-line="398" data-line-end="399">
+          <li data-line="398" data-line-end="398">
+            Correct the odd appearance in Chrome and Safari.
+          </li>
+          <li data-line="399" data-line-end="399">
+            Correct the outline style in Safari.
+          </li>
+        </ol>
+        <pre
+          data-line="401"
+          data-line-end="408"
+        ><code class="inline cm-s-default"><span class="">[</span><span class="cm-tag">type</span><span class="">=</span><span class="cm-string">'search'</span><span class="">] {</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 1 */</span><span class="">
+</span><span class="">  </span><span class="cm-meta">-webkit-</span><span class="cm-property">appearance</span><span class="">: </span><span class="cm-atom">textfield</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 2 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">outline-offset</span><span class="">: </span><span class="cm-number">-2px</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="410" data-line-end="410" />
+        <p data-line="412" data-line-end="412">
+          Remove the inner padding in Chrome and Safari on macOS.
+        </p>
+        <pre
+          data-line="414"
+          data-line-end="418"
+        ><code class="inline cm-s-default"><span class="">::</span><span class="cm-meta">-webkit-</span><span class="cm-variable-3">search-decoration</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-meta">-webkit-</span><span class="cm-property">appearance</span><span class="">: </span><span class="cm-atom">none</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="420" data-line-end="420" />
+        <ol data-line="422" data-line-end="423">
+          <li data-line="422" data-line-end="422">
+            Correct the inability to style clickable types in iOS and Safari.
+          </li>
+          <li data-line="423" data-line-end="423">
+            Change font properties to <code>inherit</code> in Safari.
+          </li>
+        </ol>
+        <pre
+          data-line="425"
+          data-line-end="432"
+        ><code class="inline cm-s-default"><span class="">::</span><span class="cm-meta">-webkit-</span><span class="cm-variable-3">file-upload-button</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 1 */</span><span class="">
+</span><span class="">  </span><span class="cm-meta">-webkit-</span><span class="cm-property">appearance</span><span class="">: </span><span class="cm-atom">button</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 2 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">font</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="434" data-line-end="434" />
+        <p data-line="436" data-line-end="436">
+          Add the correct display in Chrome and Safari.
+        </p>
+        <pre
+          data-line="438"
+          data-line-end="442"
+        ><code class="inline cm-s-default"><span class="cm-tag">summary</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">display</span><span class="">: </span><span class="cm-atom">list-item</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="444" data-line-end="444" />
+        <p data-line="446" data-line-end="446">
+          Prevent resizing textareas horizontally by default.
+        </p>
+        <pre
+          data-line="448"
+          data-line-end="452"
+        ><code class="inline cm-s-default"><span class="cm-tag">textarea</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">resize</span><span class="">: </span><span class="cm-atom">vertical</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="454" data-line-end="454" />
+        <ol data-line="456" data-line-end="457">
+          <li data-line="456" data-line-end="456">
+            Reset the default placeholder opacity in Firefox.
+          </li>
+          <li data-line="457" data-line-end="457">
+            Set the default placeholder color to the user's configured gray 400
+            color.
+          </li>
+        </ol>
+        <pre
+          data-line="459"
+          data-line-end="474"
+        ><code class="inline cm-s-default"><span class="cm-tag">input</span><span class="">::</span><span class="cm-meta">-moz-</span><span class="cm-variable-3">placeholder</span><span class="">, </span><span class="cm-tag">textarea</span><span class="">::</span><span class="cm-meta">-moz-</span><span class="cm-variable-3">placeholder</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 1 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">opacity</span><span class="">: </span><span class="cm-number">1</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 2 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">color</span><span class="">: </span><span class="cm-atom">#9ca3af</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">input</span><span class="">::</span><span class="cm-variable-3">placeholder</span><span class="">,</span><span class="">
+</span><span class="cm-tag">textarea</span><span class="">::</span><span class="cm-variable-3">placeholder</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 1 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">opacity</span><span class="">: </span><span class="cm-number">1</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">/* 2 */</span><span class="">
+</span><span class="">  </span><span class="cm-property">color</span><span class="">: </span><span class="cm-atom">#9ca3af</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="476" data-line-end="476" />
+        <p data-line="478" data-line-end="478">
+          Set the default cursor for buttons.
+        </p>
+        <pre
+          data-line="480"
+          data-line-end="485"
+        ><code class="inline cm-s-default"><span class="cm-tag">button</span><span class="">,</span><span class="">
+</span><span class="">[</span><span class="cm-tag">role</span><span class="">=</span><span class="cm-string">"button"</span><span class="">] {</span><span class="">
+</span><span class="">  </span><span class="cm-property">cursor</span><span class="">: </span><span class="cm-atom">pointer</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="487" data-line-end="487" />
+        <p data-line="489" data-line-end="489">
+          Make sure disabled buttons don't get the pointer cursor.
+        </p>
+        <pre
+          data-line="491"
+          data-line-end="495"
+        ><code class="inline cm-s-default"><span class="">:</span><span class="cm-variable-3">disabled</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">cursor</span><span class="">: </span><span class="cm-atom">default</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+        <hr data-line="497" data-line-end="497" />
+        <p data-line="499" data-line-end="499">
+          Make elements with the HTML hidden attribute stay hidden by default
+        </p>
+        <pre
+          data-line="501"
+          data-line-end="505"
+        ><code class="inline cm-s-default"><span class="">[</span><span class="cm-tag">hidden</span><span class="">] {</span><span class="">
+</span><span class="">  </span><span class="cm-property">display</span><span class="">: </span><span class="cm-atom">none</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+      </div>
+      <footer class="reserved">
+        <span>© 2022 Ivan Gregor Tabalno. All Rights Reserved.</span>
+      </footer>
+    </main>
+  </body>
+</html>

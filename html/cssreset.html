@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/stylesheet.svg" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <title>Ivan Gregor Tabalno - CSS</title>
+  </head>
+  <body class="mde-preview">
+    <main>
+      <div class="home-container">
+        <div class="home">
+          <a href="../index.html">Index </a>
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            class="opacity-50"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="48"
+              d="M184 112l144 144-144 144"
+            ></path>
+          </svg>
+          <span class="breadcrumbs">CSS Reset</span>
+        </div>
+      </div>
+      <div class="article">
+        <p data-line="3" data-line-end="3"><code>CSS Reset</code></p>
+        <pre
+          data-line="5"
+          data-line-end="239"
+        ><code class="inline cm-s-default"><span class="">*,</span><span class="">
+</span><span class="">::</span><span class="cm-variable-3">before</span><span class="">,</span><span class="">
+</span><span class="">::</span><span class="cm-variable-3">after</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">box-sizing</span><span class="">: </span><span class="cm-atom">border-box</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">border-width</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">border-style</span><span class="">: </span><span class="cm-atom">solid</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">border-color</span><span class="">: </span><span class="cm-atom">#e5e7eb</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">html</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">line-height</span><span class="">: </span><span class="cm-number">1.5</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-meta">-webkit-</span><span class="cm-property">text-size-adjust</span><span class="">: </span><span class="cm-number">100%</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-meta">-moz-</span><span class="cm-property">tab-size</span><span class="">: </span><span class="cm-number">4</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-meta">-o-</span><span class="cm-property">tab-size</span><span class="">: </span><span class="cm-number">4</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">tab-size</span><span class="">: </span><span class="cm-number">4</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-family</span><span class="">: </span><span class="cm-variable">ui-sans-serif</span><span class="">, </span><span class="cm-atom">system-ui</span><span class="">, </span><span class="cm-meta">-apple-</span><span class="cm-variable">system</span><span class="">, </span><span class="cm-variable">BlinkMacSystemFont</span><span class="">,</span><span class="">
+</span><span class="">    </span><span class="cm-string">"Segoe UI"</span><span class="">, </span><span class="cm-variable">Roboto</span><span class="">, </span><span class="cm-string">"Helvetica Neue"</span><span class="">, </span><span class="cm-variable">Arial</span><span class="">, </span><span class="cm-string">"Noto Sans"</span><span class="">, </span><span class="cm-atom">sans-serif</span><span class="">,</span><span class="">
+</span><span class="">    </span><span class="cm-string">"Apple Color Emoji"</span><span class="">, </span><span class="cm-string">"Segoe UI Emoji"</span><span class="">, </span><span class="cm-string">"Segoe UI Symbol"</span><span class="">, </span><span class="cm-string">"Noto Color Emoji"</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">body</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">margin</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">line-height</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">hr</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">height</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">color</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">border-top-width</span><span class="">: </span><span class="cm-number">1px</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">abbr</span><span class="">:</span><span class="cm-variable callee">where</span><span class="">([</span><span class="cm-tag">title</span><span class="">]) {</span><span class="">
+</span><span class="">  </span><span class="cm-meta">-webkit-</span><span class="cm-property">text-decoration</span><span class="">: </span><span class="cm-atom">underline</span><span class=""> </span><span class="cm-atom">dotted</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">text-decoration</span><span class="">: </span><span class="cm-atom">underline</span><span class=""> </span><span class="cm-atom">dotted</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">h1</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h2</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h3</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h4</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h5</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h6</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-size</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-weight</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">blockquote</span><span class="">,</span><span class="">
+</span><span class="cm-tag">dl</span><span class="">,</span><span class="">
+</span><span class="cm-tag">dd</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h1</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h2</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h3</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h4</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h5</span><span class="">,</span><span class="">
+</span><span class="cm-tag">h6</span><span class="">,</span><span class="">
+</span><span class="cm-tag">hr</span><span class="">,</span><span class="">
+</span><span class="cm-tag">figure</span><span class="">,</span><span class="">
+</span><span class="cm-tag">p</span><span class="">,</span><span class="">
+</span><span class="cm-tag">pre</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">margin</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">fieldset</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">margin</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">padding</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">legend</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">padding</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">ol</span><span class="">,</span><span class="">
+</span><span class="cm-tag">ul</span><span class="">,</span><span class="">
+</span><span class="cm-tag">menu</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">list-style</span><span class="">: </span><span class="cm-atom">none</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">margin</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">padding</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">a</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">color</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">text-decoration</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">img</span><span class="">,</span><span class="">
+</span><span class="cm-tag">svg</span><span class="">,</span><span class="">
+</span><span class="cm-tag">video</span><span class="">,</span><span class="">
+</span><span class="cm-tag">canvas</span><span class="">,</span><span class="">
+</span><span class="cm-tag">audio</span><span class="">,</span><span class="">
+</span><span class="cm-tag">iframe</span><span class="">,</span><span class="">
+</span><span class="cm-tag">embed</span><span class="">,</span><span class="">
+</span><span class="cm-tag">object</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">display</span><span class="">: </span><span class="cm-atom">block</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">vertical-align</span><span class="">: </span><span class="cm-atom">middle</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">img</span><span class="">,</span><span class="">
+</span><span class="cm-tag">video</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">max-width</span><span class="">: </span><span class="cm-number">100%</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">height</span><span class="">: </span><span class="cm-atom">auto</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">b</span><span class="">,</span><span class="">
+</span><span class="cm-tag">strong</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-weight</span><span class="">: </span><span class="cm-atom">bolder</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">code</span><span class="">,</span><span class="">
+</span><span class="cm-tag">kbd</span><span class="">,</span><span class="">
+</span><span class="cm-tag">samp</span><span class="">,</span><span class="">
+</span><span class="cm-tag">pre</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-family</span><span class="">: </span><span class="cm-variable">ui-monospace</span><span class="">, </span><span class="cm-variable">SFMono-Regular</span><span class="">, </span><span class="cm-variable">Menlo</span><span class="">, </span><span class="cm-variable">Monaco</span><span class="">, </span><span class="cm-variable">Consolas</span><span class="">,</span><span class="">
+</span><span class="">    </span><span class="cm-string">"Liberation Mono"</span><span class="">, </span><span class="cm-string">"Courier New"</span><span class="">, </span><span class="cm-atom">monospace</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-size</span><span class="">: </span><span class="cm-number">1rem</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">small</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-size</span><span class="">: </span><span class="cm-number">80%</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">sub</span><span class="">,</span><span class="">
+</span><span class="cm-tag">sup</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-size</span><span class="">: </span><span class="cm-number">75%</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">line-height</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">position</span><span class="">: </span><span class="cm-atom">relative</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">vertical-align</span><span class="">: </span><span class="cm-atom">baseline</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">sub</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">bottom</span><span class="">: </span><span class="cm-number">-0.25rem</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">sup</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">top</span><span class="">: </span><span class="cm-number">-0.5rem</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">table</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">text-indent</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">border-color</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">border-collapse</span><span class="">: </span><span class="cm-atom">collapse</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">button</span><span class="">,</span><span class="">
+</span><span class="cm-tag">input</span><span class="">,</span><span class="">
+</span><span class="cm-tag">optgroup</span><span class="">,</span><span class="">
+</span><span class="cm-tag">select</span><span class="">,</span><span class="">
+</span><span class="cm-tag">textarea</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-family</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-size</span><span class="">: </span><span class="cm-number">100%</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">font-weight</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">line-height</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">color</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">margin</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">padding</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">button</span><span class="">,</span><span class="">
+</span><span class="cm-tag">select</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">text-transform</span><span class="">: </span><span class="cm-atom">none</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">button</span><span class="">,</span><span class="">
+</span><span class="">[</span><span class="cm-tag">type</span><span class="">=</span><span class="cm-string">"button"</span><span class="">],</span><span class="">
+</span><span class="">[</span><span class="cm-tag">type</span><span class="">=</span><span class="cm-string">"reset"</span><span class="">],</span><span class="">
+</span><span class="">[</span><span class="cm-tag">type</span><span class="">=</span><span class="cm-string">"submit"</span><span class="">] {</span><span class="">
+</span><span class="">  </span><span class="cm-meta">-webkit-</span><span class="cm-property">appearance</span><span class="">: </span><span class="cm-atom">button</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">background-color</span><span class="">: </span><span class="cm-atom">transparent</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">background-image</span><span class="">: </span><span class="cm-atom">none</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="">:</span><span class="cm-meta">-moz-</span><span class="cm-variable-3">focusring</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">outline</span><span class="">: </span><span class="cm-atom">auto</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="">:</span><span class="cm-meta">-moz-</span><span class="cm-variable-3">ui-invalid</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">box-shadow</span><span class="">: </span><span class="cm-atom">none</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">progress</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">vertical-align</span><span class="">: </span><span class="cm-atom">baseline</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="">::</span><span class="cm-meta">-webkit-</span><span class="cm-variable-3">inner-spin-button</span><span class="">,</span><span class="">
+</span><span class="">::</span><span class="cm-meta">-webkit-</span><span class="cm-variable-3">outer-spin-button</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">height</span><span class="">: </span><span class="cm-atom">auto</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="">[</span><span class="cm-tag">type</span><span class="">=</span><span class="cm-string">"search"</span><span class="">] {</span><span class="">
+</span><span class="">  </span><span class="cm-meta">-webkit-</span><span class="cm-property">appearance</span><span class="">: </span><span class="cm-atom">textfield</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">outline-offset</span><span class="">: </span><span class="cm-number">-2px</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="">::</span><span class="cm-meta">-webkit-</span><span class="cm-variable-3">search-decoration</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-meta">-webkit-</span><span class="cm-property">appearance</span><span class="">: </span><span class="cm-atom">none</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="">::</span><span class="cm-meta">-webkit-</span><span class="cm-variable-3">file-upload-button</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-meta">-webkit-</span><span class="cm-property">appearance</span><span class="">: </span><span class="cm-atom">button</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">font</span><span class="">: </span><span class="cm-atom">inherit</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">summary</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">display</span><span class="">: </span><span class="cm-atom">list-item</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">textarea</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">resize</span><span class="">: </span><span class="cm-atom">vertical</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">input</span><span class="">::</span><span class="cm-meta">-moz-</span><span class="cm-variable-3">placeholder</span><span class="">,</span><span class="">
+</span><span class="cm-tag">textarea</span><span class="">::</span><span class="cm-meta">-moz-</span><span class="cm-variable-3">placeholder</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">opacity</span><span class="">: </span><span class="cm-number">1</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">color</span><span class="">: </span><span class="cm-atom">#9ca3af</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">input</span><span class="">::</span><span class="cm-variable-3">placeholder</span><span class="">,</span><span class="">
+</span><span class="cm-tag">textarea</span><span class="">::</span><span class="cm-variable-3">placeholder</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">opacity</span><span class="">: </span><span class="cm-number">1</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">color</span><span class="">: </span><span class="cm-atom">#9ca3af</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-tag">button</span><span class="">,</span><span class="">
+</span><span class="">[</span><span class="cm-tag">role</span><span class="">=</span><span class="cm-string">"button"</span><span class="">] {</span><span class="">
+</span><span class="">  </span><span class="cm-property">cursor</span><span class="">: </span><span class="cm-atom">pointer</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="">:</span><span class="cm-variable-3">disabled</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">cursor</span><span class="">: </span><span class="cm-atom">default</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="">[</span><span class="cm-tag">hidden</span><span class="">] {</span><span class="">
+</span><span class="">  </span><span class="cm-property">display</span><span class="">: </span><span class="cm-atom">none</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+      </div>
+      <footer class="reserved">
+        <span>© 2022 Ivan Gregor Tabalno. All Rights Reserved.</span>
+      </footer>
+    </main>
+  </body>
+</html>

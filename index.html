@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/stylesheet.svg" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <!-- Script for showing toast -->
+    <script>
+      function comingSoon() {
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function () {
+          x.className = x.className.replace("show", "");
+        }, 3000);
+      }
+    </script>
+
+    <title>Ivan Gregor Tabalno - CSS</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+          >
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path
+              d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3z"
+              fill="#ffdb58"
+            />
+          </svg>
+          Ivan Gregor Tabalno - CSS
+        </div>
+      </header>
+      <section class="info">
+        <div class="information">
+          <p class="welcome">WELCOME TO</p>
+          <p class="description">
+            A <span class="title">css</span> guide that how I preparing my
+            website development
+          </p>
+        </div>
+      </section>
+      <section class="info">
+        <div class="information">
+          <p>
+            I made this css guide, to let you know how important
+            <span class="important"
+              ><a
+                class="important"
+                href="https://meyerweb.com/eric/tools/css/reset/"
+                >CSS Reset</a
+              ></span
+            >
+            is, and to give you an idea how to create a clean and responsive
+            website design, I also provided sizes and spacing to help you create
+            your own sizes or spacing system.
+          </p>
+          <p>I also provide tips and tricks here that will help you.</p>
+
+          <p>
+            Not everything here is mine, it's all from my research and
+            experience.
+          </p>
+        </div>
+      </section>
+      <section class="article">
+        <div class="guide-list">
+          <div class="ul-container">
+            <h1>&mdash; Basic &mdash;</h1>
+            <div class="sub-ul-container">
+              <ul class="ul-basic">
+                <li><a href="./html/base.html">Base</a></li>
+                <li><a href="./html/cssreset.html">CSS Reset</a></li>
+                <li><a href="./html/fontsize.html">Font Size</a></li>
+                <li><a href="./html/spacing.html">Spacing</a></li>
+                <li><a href="./html/sizing.html">Sizing</a></li>
+                <li><a href="./html/responsive.html">Responsive</a></li>
+                <li><a href="./html/pseudo.html">Pseudo Element</a></li>
+                <li><a href="./html/style.html">Style</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="ul-container">
+            <h1>&mdash; Intermediate &mdash;</h1>
+            <div class="sub-ul-container">
+              <ul class="ul-intermediate">
+                <li><a href="./html/flexbox.html">Flexbox</a></li>
+                <li><a href="./html/cssgrid.html">CSS Grid</a></li>
+                <li><a href="./html/simplified.html">Simplified</a></li>
+                <li><a href="./html/tipsntricks.html">Tips & Tricks</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- <ul>
+            <li><a href="./html/cssreset.html">CSS Reset</a></li>
+          </ul>
+          <ul>
+            <li><a href="./html/base.html">Base</a></li>
+            <li><a href="./html/fontsize.html">Font Size</a></li>
+            <li><a href="./html/spacing.html">Spacing</a></li>
+          </ul>
+          <ul>
+            <li><a href="./html/sizing.html">Sizing</a></li>
+            <li><a href="./html/responsive.html">Responsive</a></li>
+            <li><a href="./html/style.html">Style</a></li>
+          </ul>
+          <ul>
+            <li>
+              <a href="./html/tipsntricks.html">Tips & Tricks</a>
+              <button class="tipsntricks" onclick="comingSoon()">
+                Tips & Tricks
+              </button>
+            </li>
+          </ul> -->
+        </div>
+      </section>
+      <section class="article">
+        <div class="ul-container">
+          <h1>&mdash; Special Thanks &mdash;</h1>
+          <div class="credits">
+            <ul>
+              <li>
+                <a href="https://tailwindcss.com/">
+                  <img
+                    src="./images/tailwind-css-logo-120.png"
+                    alt="Tailwind CSS"
+                    loading="lazy"
+                  />
+                  Tailwind CSS
+                </a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com/">
+                  <img
+                    src="./images/stack-overflow-logo-120.png"
+                    alt="Stackoverflow"
+                    loading="lazy"
+                  />
+                  Stackoverflow
+                </a>
+              </li>
+              <li>
+                <a href="https://www.google.com/">
+                  <img
+                    src="./images/google-logo-120.png"
+                    alt="Google"
+                    loading="lazy"
+                  />
+                  Google
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="header">
+        <div>
+          <img src="./images/igmtink.png" alt="igmtdev" loading="lazy" />
+          <div class="header-information">
+            <p class="details">
+              If you have any concern, please kindly message me.
+            </p>
+            <div class="linkinbio-container">
+              <a
+                class="linkinbio"
+                href="https://igmtink.github.io/igmtink-links/"
+                >@igmtink</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="reserved">
+        <p>© 2022 Ivan Gregor Tabalno. All Rights Reserved.</p>
+      </footer>
+    </main>
+    <div id="snackbar">Coming Soon...</div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+@media (min-width: 480px) {
+  ::-webkit-scrollbar-button {
+    width: 5.5rem;
+  }
+}
+
+/* Small Screen */
+@media (min-width: 640px) {
+  ::-webkit-scrollbar-button {
+    width: 8rem;
+  }
+
+  .credits > ul > li {
+    min-width: 50%;
+  }
+
+  /* .credits > ul > li > a {
+    font-size: 2rem;
+  }
+
+  .credits > ul > li > a > img {
+    width: 3.5rem;
+  } */
+}
+
+/* Medium Screen */
+@media (min-width: 768px) {
+  ::-webkit-scrollbar-button {
+    width: 8.5rem;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 1024px) {
+  .credits > ul {
+    overflow: auto;
+  }
+
+  .credits > ul > li {
+    min-width: 0%;
+    width: 100%;
+  }
+}
+
+/* XL Screen */
+@media (min-width: 1280px) {
+}
+
+/* 2XL Screen */
+@media (min-width: 1536px) {
+}

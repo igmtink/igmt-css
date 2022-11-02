@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/stylesheet.svg" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <title>Ivan Gregor Tabalno - CSS</title>
+  </head>
+  <body class="mde-preview">
+    <main>
+      <div class="home-container">
+        <div class="home">
+          <a href="../index.html">Index </a>
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            class="opacity-50"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="48"
+              d="M184 112l144 144-144 144"
+            ></path>
+          </svg>
+          <span class="breadcrumbs">CSS Grid</span>
+        </div>
+      </div>
+      <div class="article">
+        <p data-line="3" data-line-end="3">
+          <code
+            >grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%),
+            1fr));</code
+          >
+        </p>
+        <pre
+          data-line="5"
+          data-line-end="8"
+        ><code class="inline cm-s-default"><span class="cm-tag">display</span><span class="">: </span><span class="cm-variable-3">grid</span><span class="">;</span><span class="">
+</span><span class="cm-tag">grid-template-columns</span><span class="">: </span><span class="cm-variable callee">repeat</span><span class="">(</span><span class="cm-tag">auto-fit</span><span class="">, </span><span class="cm-variable callee">minmax</span><span class="">(</span><span class="cm-variable callee">min</span><span class="">(</span><span class="cm-number">500px</span><span class="">, </span><span class="cm-number">100%</span><span class="">), </span><span class="cm-number">1fr</span><span class="">));</span><span class="">
+</span></code></pre>
+        <p data-line="10" data-line-end="10">
+          To prevent overflow your <code>grid</code> layout, and have a
+          responsive <code>grid</code> layout.
+        </p>
+        <p data-line="12" data-line-end="12">
+          <code>auto-fit</code> - tell the browser to handle the column sizing
+          and element wrapping for us so that the elements will wrap into rows
+          when the width is not large enough to fit them in without any
+          overflow.
+        </p>
+        <p data-line="14" data-line-end="14">
+          <code>minmax</code> and <code>min</code> for not overflowing.
+        </p>
+        <p data-line="16" data-line-end="16">
+          This is very effective to basic <code>grid</code> layout.
+        </p>
+        <div class="video-container">
+          <video autoplay muted loop playsinline>
+            <source
+              src="../images/grid-without-autofit-minmax-min.mp4"
+              type="video/mp4; codecs=hvc1"
+            />
+            <source
+              src="../images/grid-without-autofit-minmax-min.webm"
+              type="video/webm; codecs=vp9"
+            />
+          </video>
+          <video autoplay muted loop playsinline>
+            <source
+              src="../images/grid-with-autofit-minmax-min.mp4"
+              type="video/mp4; codecs=hvc1"
+            />
+            <source
+              src="../images/grid-with-autofit-minmax-min.webm"
+              type="video/webm; codecs=vp9"
+            />
+          </video>
+        </div>
+        <hr data-line="15" data-line-end="15" />
+        <h3 data-line="17" data-line-end="17">
+          More CSS Grid Tips &amp; Tricks soon...
+        </h3>
+      </div>
+      <footer class="reserved">
+        <span>© 2022 Ivan Gregor Tabalno. All Rights Reserved.</span>
+      </footer>
+    </main>
+  </body>
+</html>

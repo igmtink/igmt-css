@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/stylesheet.svg" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <title>Ivan Gregor Tabalno - CSS</title>
+  </head>
+  <body class="mde-preview">
+    <main>
+      <div class="home-container">
+        <div class="home">
+          <a href="../index.html">Index </a>
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            class="opacity-50"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="48"
+              d="M184 112l144 144-144 144"
+            ></path>
+          </svg>
+          <span class="breadcrumbs">Simplified</span>
+        </div>
+      </div>
+      <div class="article">
+        <p data-line="3" data-line-end="3">
+          <code>Width / Max-Width / Padding</code>
+        </p>
+        <pre
+          data-line="5"
+          data-line-end="14"
+        ><code class="inline cm-s-default"><span class="cm-qualifier">.without-simplified</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">width</span><span class="">: </span><span class="cm-number">480px</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">max-width</span><span class="">: </span><span class="cm-number">100%</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-property">padding</span><span class="">: </span><span class="cm-number">1rem</span><span class="">;</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-qualifier">.with-simplified</span><span class=""> {</span><span class="">
+</span><span class="">  </span><span class="cm-property">width</span><span class="">: </span><span class="cm-variable callee">min</span><span class="">(</span><span class="cm-number">480px</span><span class="">, </span><span class="cm-number">100%</span><span class=""> </span><span class="">-</span><span class=""> </span><span class="cm-number">1rem</span><span class="">)</span><span class="">
+</span></code></pre>
+        <hr data-line="15" data-line-end="15" />
+        <h3 data-line="17" data-line-end="17">More Simplified soon...</h3>
+      </div>
+      <footer class="reserved">
+        <span>© 2022 Ivan Gregor Tabalno. All Rights Reserved.</span>
+      </footer>
+    </main>
+  </body>
+</html>

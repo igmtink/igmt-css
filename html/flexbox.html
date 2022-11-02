@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/stylesheet.svg" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <title>Ivan Gregor Tabalno - CSS</title>
+  </head>
+  <body class="mde-preview">
+    <main>
+      <div class="home-container">
+        <div class="home">
+          <a href="../index.html">Index </a>
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            class="opacity-50"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="48"
+              d="M184 112l144 144-144 144"
+            ></path>
+          </svg>
+          <span class="breadcrumbs">Flexbox</span>
+        </div>
+      </div>
+      <div class="article">
+        <p data-line="3" data-line-end="3"><code>flex: 1 1 0;</code></p>
+        <pre
+          data-line="5"
+          data-line-end="16"
+        ><code class="inline cm-s-default"><span class="cm-comment">/* Flexbox Method */</span><span class="">
+</span><span class="cm-comment">/* Parent Element */</span><span class="">
+</span><span class="cm-tag">display</span><span class="">: </span><span class="cm-variable-3">flex</span><span class="">;</span><span class="">
+
+</span><span class="cm-comment">/* Child Element */</span><span class="">
+</span><span class="cm-tag">flex</span><span class="">: </span><span class="cm-number">1</span><span class=""> </span><span class="cm-number">1</span><span class=""> </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="cm-comment">/* or */</span><span class="">
+</span><span class="cm-tag">flex-grow</span><span class="">: </span><span class="cm-number">1</span><span class="">;</span><span class="">
+</span><span class="cm-tag">flex-shrink</span><span class="">: </span><span class="cm-number">1</span><span class="">;</span><span class="">
+</span><span class="cm-tag">flex-basis</span><span class="">: </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span></code></pre>
+        <p data-line="18" data-line-end="18">
+          Use <code>flex: 1 1 0;</code> in <code>child-flex-element</code> to
+          have same width element.
+        </p>
+        <p data-line="20" data-line-end="20">
+          To allow a <code>child-flex-element</code> to grow and shrink as
+          needed, ignoring its initial size.
+        </p>
+        <p data-line="20" data-line-end="20">
+          <img src="../images/Flex-1-1-0.png" alt="Flex 1 1 0" loading="lazy" />
+        </p>
+        <hr data-line="22" data-line-end="22" />
+        <h3 data-line="24" data-line-end="24">
+          More Flexbox Tips &amp; Tricks soon...
+        </h3>
+      </div>
+      <footer class="reserved">
+        <span>© 2022 Ivan Gregor Tabalno. All Rights Reserved.</span>
+      </footer>
+    </main>
+  </body>
+</html>
